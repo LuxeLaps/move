@@ -1,0 +1,15 @@
+[package]
+name = "playground"
+version = "0.0.1"
+
+[addresses]
+# Replace this with your actual Aptos account address from `aptos init`
+# You can find it in ~/.aptos/config.yaml under "account:"
+playground = "0xad995fdbe4d3e247342b3dc279259e3cc586ec0a14163b79dccc64b4f9c0ebe"
+
+[dependencies]
+# Aptos Framework (core modules)
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "aptos-node-v1.13.1" }
+
+# Aptos Standard Library
+AptosStdlib   = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "aptos-node-v1.13.1" }
